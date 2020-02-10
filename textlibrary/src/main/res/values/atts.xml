@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="FormatTextView">
+        <attr name="specifyText" format="string"/>
+        <attr name="specifyColor" format="color|integer|reference" />
+        <attr name="specifySize" format="integer"/>
+        <attr name="specifyStyle">
+            <enum name="normal" value="0"/>
+            <enum name="bold" value="1"/>
+            <enum name="italic" value="2"/>
+            <enum name="bold_italic" value="3"/>
+        </attr>
+    </declare-styleable>
+</resources>

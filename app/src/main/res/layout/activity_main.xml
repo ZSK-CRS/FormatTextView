@@ -3,9 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:padding="20dp"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:padding="20dp"
     tools:context=".MainActivity">
 
     <cn.zsk.textlibrary.FormatTextView
@@ -15,10 +15,26 @@
         android:text="花谢花飞飞满天，红消香断有谁怜"
         android:textColor="@color/colorPrimary"
         android:textSize="17dp"
-        app:specifyColor="@color/colorAccent"
         app:specifySize="30"
         app:specifyStyle="bold_italic"
-        app:specifyText="飞满天" />
+        app:specifyText="飞满天"
+        app:specifyColor="@color/colorPrimaryDark"
+        app:specifyURL="https://github.com/" />
+
+
+    <cn.zsk.textlibrary.FormatTextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:text="测试上标 32"
+        android:textColor="@color/colorPrimary"
+        android:textSize="17dp"
+        app:specifyColor="@color/colorAccent"
+        app:specifyDeleteLine="false"
+        app:specifyScript="superscript"
+        app:specifyStyle="bold_italic"
+        app:specifyText="2"
+        app:specifyUnderLine="false" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -28,20 +44,20 @@
         <EditText
             android:id="@+id/input"
             android:layout_width="0dp"
-            android:textSize="13dp"
             android:layout_height="match_parent"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:textSize="13dp" />
 
         <Button
             android:id="@+id/button"
-            android:text="确定"
             android:layout_width="70dp"
-            android:layout_height="50dp"/>
+            android:layout_height="50dp"
+            android:text="确定" />
     </LinearLayout>
 
     <cn.zsk.textlibrary.FormatTextView
         android:id="@+id/format_text"
         android:layout_width="match_parent"
-        android:layout_height="50dp" />
+        android:layout_height="wrap_content" />
 
 </LinearLayout>

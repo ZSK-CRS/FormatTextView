@@ -1,14 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <declare-styleable name="FormatTextView">
-        <attr name="specifyText" format="string"/>
+        <attr name="specifyText" format="string" />
         <attr name="specifyColor" format="color|integer|reference" />
-        <attr name="specifySize" format="integer"/>
+        <attr name="specifyTextBackgroundColor" format="color|integer|reference" />
+        <attr name="specifySize" format="integer|reference" />
+        <attr name="specifyDeleteLine" format="boolean" />
+        <attr name="specifyUnderLine" format="boolean" />
+        <attr name="specifyImage" format="reference"/>
+        <attr name="specifyImageWidth" format="integer|reference"/>
+        <attr name="specifyImageHeight" format="integer|reference"/>
+        <attr name="specifyURL" format="string|reference"/>
+        <attr name="specifyScript">
+            <enum name="superscript" value="0" />
+            <enum name="subscript" value="1" />
+        </attr>
         <attr name="specifyStyle">
-            <enum name="normal" value="0"/>
-            <enum name="bold" value="1"/>
-            <enum name="italic" value="2"/>
-            <enum name="bold_italic" value="3"/>
+            <enum name="normal" value="0" />
+            <enum name="bold" value="1" />
+            <enum name="italic" value="2" />
+            <enum name="bold_italic" value="3" />
         </attr>
     </declare-styleable>
 </resources>

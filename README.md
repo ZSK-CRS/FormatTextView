@@ -21,7 +21,7 @@
 ```
   dependencies {
   
-		implementation 'com.github.User:Repo:Tag
+		implementation 'com.github.ZSK-CRS:FormatTextView:v1.0.3'
     
 	}
 ```

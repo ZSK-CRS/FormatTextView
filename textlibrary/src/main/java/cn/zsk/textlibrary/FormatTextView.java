@@ -64,8 +64,8 @@ public class FormatTextView extends AppCompatTextView {
                     specifyTextSize = typedArray.getInt(R.styleable.FormatTextView_specifySize, (int) getTextSize());
                     mSizeSpan = new AbsoluteSizeSpan(specifyTextSize,true);
                 } else if (attrResId == R.styleable.FormatTextView_specifyStyle) {
-                    sepeifyTextStyle = typedArray.getInt(R.styleable.FormatTextView_specifyStyle, Typeface.NORMAL);
-                    mStyleSpan = new StyleSpan(sepeifyTextStyle);
+                    specifyextStyle = typedArray.getInt(R.styleable.FormatTextView_specifyStyle, Typeface.NORMAL);
+                    mStyleSpan = new StyleSpan(specifyextStyle);
                 }
             }
             typedArray.recycle();
@@ -106,7 +106,7 @@ public class FormatTextView extends AppCompatTextView {
     private String specifyText;
     private int specifyTextSize;
     private int specifyTextColor;
-    private int sepeifyTextStyle;
+    private int specifyextStyle;
 
     private boolean mCanDraw = true;
 
@@ -163,8 +163,8 @@ public class FormatTextView extends AppCompatTextView {
      */
     public FormatTextView setSpecifyTextStyle(int style) {
         if (Typeface.NORMAL <= style && Typeface.BOLD_ITALIC >= style) {
-            this.sepeifyTextStyle = style;
-            mStyleSpan = new StyleSpan(specifyTextColor);
+            this.specifyextStyle = style;
+            mStyleSpan = new StyleSpan(specifyextStyle);
         }
         return this;
     }

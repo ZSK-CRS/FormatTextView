@@ -25,9 +25,10 @@
     
 	}
 ```
-
+**
+使用方式**
 ```
-xml
+方式一：xml
    <cn.zsk.textlibrary.FormatTextView
         android:layout_width="wrap_content"
         android:layout_height="100dp"
@@ -42,7 +43,7 @@ xml
 
 ```
 ```
-code
+方式二：code
            formatTextView.setContent(content)
                     .setSpecifyText("知是谁")
                     .setSpecifyTextColor(Color.RED)

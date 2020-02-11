@@ -23,9 +23,9 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.button).setOnClickListener(v -> {
             String content = editText.getText().toString();
             formatTextView.setContent(content)
-                    .setSpecifyText("你好")
+                    .setSpecifyText("知是谁")
                     .setSpecifyTextColor(Color.RED)
-                    .setSpecifyTextSize(10)
+                    .setSpecifyTextSize(30)
                     .setSpecifyTextStyle(Typeface.ITALIC)
                     .refresh();
         });

@@ -47,6 +47,6 @@
                     .setSpecifyText("知是谁")
                     .setSpecifyTextColor(Color.RED)
                     .setSpecifyTextSize(30)
-                    .setSpecifyTextStyle(Typeface.ITALIC)
+                    .setSpecifyTextStyle(Typeface.NORMAL)
                     .refresh();
 ```

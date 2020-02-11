@@ -25,8 +25,7 @@
     
 	}
 ```
-**
-使用方式**
+**使用方式**
 ```
 方式一：xml
    <cn.zsk.textlibrary.FormatTextView

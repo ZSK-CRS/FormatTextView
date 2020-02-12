@@ -262,7 +262,7 @@ public class FormatTextView extends AppCompatTextView {
     }
 
     /**
-     * 设置需要强调的文字背景颜色  需调用{@link #refresh()}生效
+     * 设置需要强调的文字颜色  需调用{@link #refresh()}生效
      *
      * @param color ContextCompat.getColor(this, R.color.xxx)或者 Color.xxx 或者 十六进制格式颜色
      * @return
@@ -274,7 +274,7 @@ public class FormatTextView extends AppCompatTextView {
     }
 
     /**
-     * 设置需要强调的文字的颜色  需调用{@link #refresh()}生效
+     * 设置需要强调的文字背景颜色  需调用{@link #refresh()}生效
      *
      * @param color ContextCompat.getColor(this, R.color.xxx)或者 Color.xxx 或者 十六进制格式颜色
      * @return

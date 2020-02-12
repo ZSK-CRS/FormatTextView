@@ -25,6 +25,25 @@
     
 	}
 ```
+#### 方法列表
+
+方法 | 描述
+---- | ----
+setContent(String content) | 设置整体字符串
+setSpecifyText(String specifyText) | 设置需要强调的字符
+setSpecifyTextSize(int size) | 设置需要强调字符的大小
+setSpecifyTextColor(int color) | 设置需要强调的文字颜色
+setSpecifyTextBackgroundColor(int color) | 设置需要强调的文字背景颜色
+setSpecifyTextStyle(int style) | 设置强调部分的风格 0: 无效果  1：加粗  2: 斜体  3:加粗兼斜体
+setSpecifyDeleteLine(boolean deleteLine) | 是否添加删除线
+setSpecifyUnderLine(boolean underLine) | 是否添加下划线
+setSpecifyScriptStyle(int style) | 0：上标  1:下标
+setSpecifyImage(@DrawableRes int image) | 替换指定文字为图片 需要配合setSpecifyImageRect使用
+setSpecifyImageRect(Size size) | 设置替换图片的尺寸 配合setSpecifyImage
+setSpecifyURL(String url) | 指定文字设置链接
+refresh() | 上述效果必须调用refresh方法生效
+
+
 **使用方式**
 ```
 方式一：xml

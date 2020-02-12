@@ -9,55 +9,116 @@
     tools:context=".MainActivity">
 
     <cn.zsk.textlibrary.FormatTextView
-        android:layout_width="wrap_content"
-        android:layout_height="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="花谢花飞飞满天，红消香断有谁怜"
-        android:textColor="@color/colorPrimary"
+        android:text="改变指定文字的大小"
+        android:textColor="@color/black"
         android:textSize="17dp"
-        app:specifySize="30"
-        app:specifyStyle="bold_italic"
-        app:specifyText="飞满天"
         app:specifyColor="@color/colorPrimaryDark"
-        app:specifyURL="https://github.com/" />
-
+        app:specifySize="25"
+        app:specifyText="大小" />
 
     <cn.zsk.textlibrary.FormatTextView
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:gravity="center"
-        android:text="测试上标 32"
-        android:textColor="@color/colorPrimary"
+        android:text="改变指定文字的颜色"
+        android:textColor="@color/black"
         android:textSize="17dp"
         app:specifyColor="@color/colorAccent"
-        app:specifyDeleteLine="false"
-        app:specifyScript="superscript"
-        app:specifyStyle="bold_italic"
-        app:specifyText="2"
-        app:specifyUnderLine="false" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:orientation="horizontal">
-
-        <EditText
-            android:id="@+id/input"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:textSize="13dp" />
-
-        <Button
-            android:id="@+id/button"
-            android:layout_width="70dp"
-            android:layout_height="50dp"
-            android:text="确定" />
-    </LinearLayout>
+        app:specifyText="颜色" />
 
     <cn.zsk.textlibrary.FormatTextView
-        android:id="@+id/format_text"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="改变指定文字的背景颜色"
+        android:textColor="@color/black"
+        android:textSize="17dp"
+        app:specifyText="背景颜色"
+        app:specifyTextBackgroundColor="@color/blue" />
+
+    <cn.zsk.textlibrary.FormatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="改变指定文字的风格"
+        android:textColor="@color/black"
+        android:textSize="17dp"
+        app:specifyColor="@color/colorAccent"
+        app:specifyStyle="bold_italic"
+        app:specifyText="风格" />
+
+    <cn.zsk.textlibrary.FormatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="改变指定文字的删除线"
+        android:textColor="@color/black"
+        android:textSize="17dp"
+        app:specifyDeleteLine="true"
+        app:specifyText="删除线" />
+
+    <cn.zsk.textlibrary.FormatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="改变指定文字的下划线"
+        android:textColor="@color/black"
+        android:textSize="17dp"
+        app:specifyText="下划线"
+        app:specifyUnderLine="true" />
+
+    <cn.zsk.textlibrary.FormatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="指定特殊字符为上标：a2"
+        android:textColor="@color/black"
+        android:textSize="17dp"
+        app:specifyScript="superscript"
+        app:specifyText="2" />
+
+    <cn.zsk.textlibrary.FormatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="指定特殊字符为下标：log28"
+        android:textColor="@color/black"
+        android:textSize="17dp"
+        app:specifyScript="subscript"
+        app:specifyText="2" />
+
+    <cn.zsk.textlibrary.FormatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="指定特殊字符为图片"
+        android:textColor="@color/black"
+        android:textSize="17dp"
+        app:specifyImage="@drawable/ic_launcher"
+        app:specifyImageHeight="50"
+        app:specifyImageWidth="50"
+        app:specifyText="图片" />
+
+    <cn.zsk.textlibrary.FormatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="指定特殊字符包含链接"
+        android:textColor="@color/black"
+        android:textSize="17dp"
+        app:specifyText="链接"
+        app:specifyURL="https://www.baidu.com" />
 
 </LinearLayout>

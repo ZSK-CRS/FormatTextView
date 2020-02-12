@@ -51,19 +51,19 @@ refresh() | 上述效果必须调用refresh方法生效
         android:layout_width="wrap_content"
         android:layout_height="100dp"
         android:gravity="center"
-        android:text="花谢花飞飞满天，红消香断有谁怜"
+        android:text="指定特殊字符的大小字体"
         android:textColor="@color/colorPrimary"
         android:textSize="17dp"
         app:specifyColor="@color/colorAccent"
         app:specifySize="30"
         app:specifyStyle="bold_italic"
-        app:specifyText="飞满天" />
+        app:specifyText="大小字体" />
 
 ```
 ```
 方式二：code
            formatTextView.setContent(content)
-                    .setSpecifyText("知是谁")
+                    .setSpecifyText("大小字体")
                     .setSpecifyTextColor(Color.RED)
                     .setSpecifyTextSize(30)
                     .setSpecifyTextStyle(Typeface.NORMAL)

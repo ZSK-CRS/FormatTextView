@@ -1,2 +1,2 @@
-include ':app', ':textlibrary'
+include ':app', ':textlibrary', ':commonutils'
 rootProject.name='FormatTextView'

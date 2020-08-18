@@ -170,6 +170,7 @@ public class FormatTextView extends AppCompatTextView {
         }
     }
 
+
     private void setSpecifyFormat() {
         if (specifyText.length() != 0) {
             int start = mContent.indexOf(specifyText);
